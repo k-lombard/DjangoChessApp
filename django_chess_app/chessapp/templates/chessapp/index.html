@@ -28,6 +28,7 @@
             {% csrf_token %}
             <input type="submit" name="account_button" value="Your Account"><br>
           </form>
+          <a href="{% url 'reset_board' %}" class='btn btn-lg'>Reset Board</a>
           
     </body>
 </html>

@@ -11,10 +11,11 @@ from django.http import HttpResponse, HttpResponseRedirect
 
 
 
-# Create your views here.
+
 board = chess.Board()
 
 def index(request):
+
     context = {}
     if request.user.is_authenticated:
         global board
@@ -117,6 +118,7 @@ def signup(request):
 
 
 def log_out(request):
+
     logout(request)
     return redirect('login')
 
@@ -136,6 +138,13 @@ def account_view(request):
 
 
     return render(request, 'chessapp/account.html', context)
+
+
+# def reset_board(request):
+
+#     board.reset()
+
+#     return redirect('index')
 
 
 

@@ -18,11 +18,13 @@ from django.urls import path, include
 from django.conf.urls import url
 from chessapp.views import index, login_view, signup, log_out, account_view
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('index', index, name='index'),
     url('login', login_view, name='login'),
     url('signup', signup, name='signup'),
     url('log_out', log_out, name='log_out'),
-    url('account', account_view, name='account')
+    url('account', account_view, name='account'),
+    # url('reset_board', reset_board, name='reset_board')
 ]
