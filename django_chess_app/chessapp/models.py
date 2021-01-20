@@ -8,9 +8,13 @@ class User(models.Model):
     Email= models.EmailField(primary_key=True)
     Date_Joined=models.DateTimeField(default=timezone.now)
     Password = models.TextField(default='')
+    Username = models.TextField(default='')
 
     def __str__(self):
         return self.Email
+    
+    def save(self, *args, **kwargs):
+        super(User, self).save(*args, **kwargs)
 
 class Board(models.Model):
     ID = models.IntegerField(primary_key=True)

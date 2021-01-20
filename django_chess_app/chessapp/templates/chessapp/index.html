@@ -19,6 +19,15 @@
             {% csrf_token %}
             <label for="move">Make move:</label><br>
             <input type="text" id="move" name="move"><br>
+            
           </form>
+
+          <a href="{% url 'log_out' %}" class='btn btn-lg'>Log Out</a>
+          <a href="{% url 'account' %}" class='btn btn-lg'>Account</a>
+          <form method="post" acc_id='acc'>
+            {% csrf_token %}
+            <input type="submit" name="account_button" value="Your Account"><br>
+          </form>
+          
     </body>
 </html>

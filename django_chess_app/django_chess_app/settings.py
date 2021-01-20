@@ -21,7 +21,9 @@ SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '*ouu^v7zouw=!c0ndvqckzzivckd+l28^#ko2-s1m$b0nq_y_o'
+LOGIN_REDIRECT_URL = 'index'
 
+LOGIN_URL = 'login'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 

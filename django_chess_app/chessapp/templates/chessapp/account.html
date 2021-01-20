@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HI</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="description" content="">
+
+
+
+    </head>
+    <body></body>
+    <h1>{{ username }}</h1>
+    <h1> {{ email }} </h1>
+    <h1> {{ date }} </h1>
+
+
+    <form method="post" acc_id='acc'>
+        {% csrf_token %}
+        <input type="submit" name="index_button" value="Return to Board"><br>
+      </form>
+          
+    </body>
+</html>
